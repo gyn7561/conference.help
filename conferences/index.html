@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello world!</title>
+    <title>华严会议助手</title>
     <!-- zui -->
     <link href="css/zui.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 
         .top-text{
             display: inline-block;
-            color: red;
+            color: darkred;
         }
         .top-more{
             float:right;
@@ -55,17 +55,24 @@
             background-color: darkred;
             text-align: center;
             color: white;
-            font: 1.5em "微软雅黑";
+            font: 1.5em "黑体";
             height: 204px;
             margin-left: 50px;
+            /*font-weight:bold;*/
         }
         .card-title>p{
             margin-top: 65px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
         }
         .headline {
             display: block;
-            margin: 10px 0 25px 0;
-            border-bottom: 1px dotted #e4e9f0;
+            margin: 25px 150px 25px 0;
+            border-bottom: 1px solid grey;
+
+        }
+        .headline>h4{
+            font-weight:normal;
         }
         .full-width{
             height: 100px;
@@ -303,32 +310,31 @@
             <div class="row">
                 <!-- Address -->
                 <div class="col-md-3">
-                    <div class="headline"><h2>联系方式</h2></div>
+                    <div class="headline"><h4>联系方式</h4></div>
                     <address class="md-margin-bottom-40">
-                        地址：xxxxxxxx <br>
-                        xxxxxxxxx <br>
-                        电话: xxxxxxxxx <br>
-                        Fax: xxxxxxxxx <br>
-                        Email: <a href="mailto:info@bestxinhanyuan.com" class="">info@conforences.help</a>
+                        <span class="icon-location-arrow"></span> xxxxxxxx <br>
+                        <span class="icon-phone"></span>: xxxxxxxxx <br>
+                        <span class="icon-envelope"></span> <a href="mailto:info@bestxinhanyuan.com" class="">info@conforences.help</a><br>
+                        &copy;华严会议助手
                     </address>
                 </div><!--/col-md-3-->
                 <!-- End Address -->
 
                 <!-- WeChat -->
                 <div class="col-md-3">
-                    <div class="headline"><h2>我要加小严微信</h2></div>
+                    <div class="headline"><h4>我要加小严微信</h4></div>
                     <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px">
                 </div><!--/col-md-3-->
                 <!-- End WeChat -->
                 <!-- WeChat -->
                 <div class="col-md-3">
-                    <div class="headline"><h2>我要关注公共号</h2></div>
+                    <div class="headline"><h4>我要关注公共号</h4></div>
                     <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px">
                 </div><!--/col-md-3-->
                 <!-- End WeChat -->
                 <!-- WeChat -->
                 <div class="col-md-3">
-                    <div class="headline"><h2>我非要打赏才爽</h2></div>
+                    <div class="headline"><h4>我非要打赏才爽</h4></div>
                     <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px;display: inline-block">
                     <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px;display: inline-block">
                 </div><!--/col-md-3-->

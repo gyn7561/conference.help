@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world!</title>
+    <!-- zui -->
+    <link href="css/zui.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <style>
+
+
+        .top-text{
+            display: inline-block;
+            color: red;
+        }
+        .top-more{
+            float:right;
+            padding-top: 30px;
+            color: rgba(0,0,0,0.50);
+        }
+        .con-list-top{
+            margin-top: 40px;
+            height: 50px;
+            border-bottom: 1px solid rgba(0,0,0,0.12);
+            margin-bottom: 40px;
+        }
+        .card:hover{
+            box-shadow: 0 5px 5px rgba(0,0,0,.175);
+        }
+
+        .card .card-heading{
+            white-space: normal;
+            height: 60px;
+        }
+        .card .card-content{
+            height: 50px;
+        }
+        .card .card-actions{
+            margin-top: -20px;
+        }
+
+        .card-top{
+            background: darkred;
+            height: 20px;
+            /*color:white;*/
+            /*line-height: 48px;*/
+            /*font-size: 15px;*/
+            /*font-weight:400;*/
+            /*font-family: "微软雅黑";*/
+            /*padding-left:10px;*/
+        }
+        .card-title{
+            background-color: darkred;
+            text-align: center;
+            color: white;
+            font: 1.5em "微软雅黑";
+            height: 204px;
+            margin-left: 50px;
+        }
+        .card-title>p{
+            margin-top: 65px;
+        }
+        .headline {
+            display: block;
+            margin: 10px 0 25px 0;
+            border-bottom: 1px dotted #e4e9f0;
+        }
+        .full-width{
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <!-- 导航头部 -->
+            <div class="navbar-header">
+                <!-- 移动设备上的导航切换按钮 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-example">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 品牌名称或logo -->
+                <a class="navbar-brand" href="#">Conferences.help</a>
+            </div>
+            <!-- 导航项目 -->
+            <div class="collapse navbar-collapse navbar-collapse-example">
+                <!-- 一般导航项目 -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="icon-bell"></span> 我要办会议</a></li>
+                    <li><a href="#"><span class="icon-list-ul"></span> 新的会议</a></li>
+                    <li><a href="#"><span class="icon-list-ul"></span> 历史会议</a></li>
+                    <li><a href="#"><span class="icon-question-sign"></span> 我要提意见</a></li>
+                    <li><a href="#"><span class="icon-zhifubao-square"></span> 我要打赏</a></li>
+                </ul>
+                <!--右侧导航条-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                    </li>
+                    <li class="li-border">
+                        <a href="#">登陆</a>
+                    </li>
+                </ul>
+
+            </div><!-- END .navbar-collapse -->
+        </div>
+    </nav>
+    <!--轮播图-->
+    <div class="container">
+        <div id="myNiceCarousel" class="carousel slide" data-ride="carousel">
+            <!-- 圆点指示器 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myNiceCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myNiceCarousel" data-slide-to="1"></li>
+                <li data-target="#myNiceCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- 轮播项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#"><img alt="First slide" src="http://zui.sexy/docs/img/slide1.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>我是第一张幻灯片</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img alt="Second slide" src="http://zui.sexy/docs/img/slide2.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>我是第二张幻灯片</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#"><img alt="Third slide" src="http://zui.sexy/docs/img/slide3.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>我是第三张幻灯片</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- 项目切换按钮 -->
+            <a class="left carousel-control" href="#myNiceCarousel" data-slide="prev">
+                <span class="icon icon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myNiceCarousel" data-slide="next">
+                <span class="icon icon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--内容区域-->
+    <div class="container">
+        <div class="con-list-top">
+            <h2 class="top-text"><span class="icon-star"></span> 最新活动</h2>
+            <a href="#" class="top-more">更多...</a>
+        </div>
+        <div class="cards">
+            <div class="col-xs-3">
+                <div class="card card-title">
+                    <p>经济学会议</p>
+                    <div>Economics<br>Conferences</div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="col-xs-3">
+                <div class="card card-title">
+                    <p>金融学会议</p>
+                    <div>Finance <br>Conferences</div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="col-xs-3">
+                <div class="card card-title">
+                    <p>会计学会议</p>
+                    <div>Accounting <br>Conferences</div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="card">
+                    <div class="card-top"></div>
+                    <div class="card-heading"><strong>中国金融学年会会议名称一定要长点，否则没有两行</strong></div>
+                    <div class="card-content text-muted">主办单位：中国财经大学 主办单位一定要多，要不没有两行</div>
+                    <div class="card-content text-muted"><i class="icon-calendar"></i> 2017-12-12</div>
+                    <div class="card-actions">
+                        <button type="button" class="btn btn-danger"><i class="icon-heart"></i> 我要参会</button>
+                        <div class="pull-right text-danger"><i class="icon-location-arrow"></i> 北京</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer部分-->
+    <footer class="container-fluid">
+        <div class="footer container">
+            <div class="row">
+                <!-- Address -->
+                <div class="col-md-3">
+                    <div class="headline"><h2>联系方式</h2></div>
+                    <address class="md-margin-bottom-40">
+                        地址：xxxxxxxx <br>
+                        xxxxxxxxx <br>
+                        电话: xxxxxxxxx <br>
+                        Fax: xxxxxxxxx <br>
+                        Email: <a href="mailto:info@bestxinhanyuan.com" class="">info@conforences.help</a>
+                    </address>
+                </div><!--/col-md-3-->
+                <!-- End Address -->
+
+                <!-- WeChat -->
+                <div class="col-md-3">
+                    <div class="headline"><h2>我要加小严微信</h2></div>
+                    <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px">
+                </div><!--/col-md-3-->
+                <!-- End WeChat -->
+                <!-- WeChat -->
+                <div class="col-md-3">
+                    <div class="headline"><h2>我要关注公共号</h2></div>
+                    <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px">
+                </div><!--/col-md-3-->
+                <!-- End WeChat -->
+                <!-- WeChat -->
+                <div class="col-md-3">
+                    <div class="headline"><h2>我非要打赏才爽</h2></div>
+                    <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px;display: inline-block">
+                    <img class="full-width img-responsive" src="img/webcat.png" style="padding-left: 2px;display: inline-block">
+                </div><!--/col-md-3-->
+                <!-- End WeChat -->
+            </div>
+        </div>
+    </footer>
+
+
+<!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- ZUI Javascript组件 -->
+<script src="js/zui.min.js"></script>
+</body>
+</html>
